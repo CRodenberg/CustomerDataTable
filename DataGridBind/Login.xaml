@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="Login" Height="300" Width="300">
     <Grid>
-
-        <Button Content="Button" HorizontalAlignment="Left" Height="41" Margin="96,202,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click"/>
-        <TextBox HorizontalAlignment="Left" Height="34" Margin="65,102,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="173" RenderTransformOrigin="0.482,0.607"/>
+        <TextBox HorizontalAlignment="Center" Height ="34" TextWrapping="Wrap" Width="150" Margin="0,100,0,0"></TextBox>
+        <TextBox HorizontalAlignment="Center" Height ="34" TextWrapping="Wrap" Width="150" Margin="0,0,0,0"></TextBox>
+        <Button Content="Submit" HorizontalAlignment="Center" Height="41" Margin="0,202,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click"/>
 
     </Grid>
 </Window>
