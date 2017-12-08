@@ -2,7 +2,6 @@
 using System.Data;
 using MySql.Data.MySqlClient;
 using System.Configuration;
-using System;
 
 namespace DataGridBind
 {
@@ -11,15 +10,23 @@ namespace DataGridBind
     /// </summary>
     public partial class MainWindow : Window
     {
+        MaintenanceWindow edit = new MaintenanceWindow();
         #region MySqlConnection Connection
-        MySqlConnection conn = new MySqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);      
+        MySqlConnection conn = new MySqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+
         public MainWindow()
         {
             InitializeComponent();
+            loadData();
+        }
+
+        #endregion
+        public void loadData()
+        {
             try
             {
                 conn.Open();
-                MySqlCommand cmd = new MySqlCommand("Select CustomerID, ContactName, Address, City, Phone, Email from customers where ContactName like '%A'", conn);
+                MySqlCommand cmd = new MySqlCommand("Select CustomerID, ContactName, Address, City, Phone from customers", conn);
                 MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 adp.Fill(ds, "LoadDataBinding");
@@ -34,14 +41,15 @@ namespace DataGridBind
                 conn.Close();
             }
         }
-
-
-
-        #endregion
-
         private void btnloaddata_Click(object sender, RoutedEventArgs e)
         {
+            edit.Show();
+            edit.Owner = this;
+        }
 
+        private void Window_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            loadData();
         }
     }
 }

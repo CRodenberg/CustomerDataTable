@@ -31,3 +31,5 @@ W:\AppDev\DataGridBind\DataGridBind\obj\Debug\DataGridBind.pdb
 W:\AppDev\DataGridBind\DataGridBind\obj\Debug\Login.g.cs
 W:\AppDev\DataGridBind\DataGridBind\obj\Debug\DataGridBind_MarkupCompile.lref
 W:\AppDev\DataGridBind\DataGridBind\obj\Debug\Login.baml
+W:\AppDev\DataGridBind\DataGridBind\obj\Debug\MaintenanceWindow.g.cs
+W:\AppDev\DataGridBind\DataGridBind\obj\Debug\MaintenanceWindow.baml

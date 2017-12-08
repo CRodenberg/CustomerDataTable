@@ -1,0 +1,47 @@
+﻿<Window x:Class="DataGridBind.MaintenanceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataGridBind"
+        mc:Ignorable="d"
+        Title="MaintenanceWindow" Height="300" Width="350" >
+
+    <Grid Grid.Background="#FF1488CB" Margin="0,0,-5,-5">
+
+            <Label Content="Customer ID: " FontWeight="Bold" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top"/>
+
+            <Button Content="Get Customer" FontWeight="Bold" HorizontalAlignment="Left" Margin="178,18,0,0" VerticalAlignment="Top" Width="94" Click="Button_Click_Get"/>
+
+            <Label Content="Name:" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top"/>
+
+            <Label Content="Address:" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top"/>
+
+            <Label Content="City:" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,129,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.515,0.5"/>
+
+            <Label Content="Phone:" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,155,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.217,0.346"/>
+            <Label Content="Zip Code:" FontWeight="Bold" Margin="175,158,0,0" VerticalAlignment="Top"></Label>
+
+            <Button Content="Delete" FontWeight="Bold" Name="deletebtn" HorizontalAlignment="Left" Margin="40,203,0,0" VerticalAlignment="Top" Width="73" Click="deleteButton_Click"/>
+
+            <Button Content="Insert" FontWeight="Bold" Name="insertbtn" HorizontalAlignment="Left" Margin="40,235,0,0" VerticalAlignment="Top" Width="73" Click="insertbtn_Click"/>
+
+            <Button Content="Update" FontWeight="Bold" Name="updatebtn" HorizontalAlignment="Left" Margin="141,203,0,0" VerticalAlignment="Top" Width="73" Click="updatebtn_Click"/>
+
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="92,18,0,0" TextWrapping="Wrap" Text="" Name="customerid" VerticalAlignment="Top" Width="70"/>
+
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="71,78,0,0" TextWrapping="Wrap" Text="" Name="nametxt" VerticalAlignment="Top" Width="245"/>
+
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="71,105,0,0" TextWrapping="Wrap" Text="" Name="addresstxt" VerticalAlignment="Top" Width="245"/>
+
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="71,132,0,0" TextWrapping="Wrap" Text="" Name="citytxt" VerticalAlignment="Top" Width="245"/>
+
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="71,159,0,0" TextWrapping="Wrap" Text="" Name="phonetxt" VerticalAlignment="Top" Width="100"/>
+
+            <TextBox HorizontalAlignment="Left" Height="20" Margin="241,159,0,0" TextWrapping="Wrap" Text="" Name="ziptxt" VerticalAlignment="Top" Width="75"/>
+
+            <Button Content="Exit" FontWeight="Bold" Name="exitbtn" HorizontalAlignment="Left" Margin="141,235,0,0" VerticalAlignment="Top" Width="73" Click="exitbtn_Click"/>
+
+        </Grid>
+
+</Window>
